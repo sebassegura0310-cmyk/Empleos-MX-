@@ -1,0 +1,620 @@
+/* =========================================
+   CONFIGURACIÓN GENERAL
+========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background: #f5f3ec;
+    color: #29231f;
+
+    min-height: 100vh;
+}
+
+
+/* =========================================
+   ENCABEZADO
+========================================= */
+
+.header {
+    width: 100%;
+
+    min-height: 90px;
+
+    padding: 15px 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #f8f7f1;
+
+    border-bottom: 1px solid #e2e1d9;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 100;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+
+    gap: 14px;
+
+    font-size: 24px;
+}
+
+.logo-icon {
+    width: 55px;
+    height: 55px;
+
+    border-radius: 50%;
+
+    background: #1d6b2b;
+
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 25px;
+}
+
+.top-button {
+    border: none;
+
+    background: #1d6b2b;
+    color: white;
+
+    padding: 17px 27px;
+
+    border-radius: 10px;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+/* =========================================
+   PANTALLAS
+========================================= */
+
+main {
+    width: 100%;
+}
+
+.pantalla {
+    display: none;
+
+    width: 100%;
+
+    min-height: calc(100vh - 90px);
+
+    padding: 70px 28px;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
+}
+
+.pantalla.activa {
+    display: flex;
+}
+
+
+/* =========================================
+   INICIO
+========================================= */
+
+#paso-0 {
+    text-align: center;
+}
+
+.disponible {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    background: white;
+
+    border: 1px solid #d8ded9;
+
+    padding: 13px 25px;
+
+    border-radius: 30px;
+
+    color: #66615d;
+
+    font-size: 17px;
+
+    margin-bottom: 40px;
+}
+
+.disponible span {
+    width: 10px;
+    height: 10px;
+
+    border-radius: 50%;
+
+    background: #86b291;
+}
+
+h1 {
+    font-size: 58px;
+
+    line-height: 1.05;
+
+    margin: 0 auto 40px;
+
+    max-width: 700px;
+}
+
+h1 strong {
+    display: block;
+
+    color: #1d6b2b;
+}
+
+.descripcion {
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    color: #706963;
+
+    font-size: 23px;
+
+    line-height: 1.55;
+}
+
+.salario {
+    background: white;
+
+    border: 1px solid #deddd6;
+
+    border-radius: 18px;
+
+    max-width: 620px;
+
+    margin: 55px auto 50px;
+
+    padding: 35px 20px;
+
+    box-shadow:
+        0 5px 12px rgba(0, 0, 0, 0.08);
+}
+
+.salario-titulo {
+    color: #77716b;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+}
+
+.salario-cantidad {
+    color: #df5d18;
+
+    font-size: 48px;
+
+    font-weight: bold;
+
+    margin: 10px 0;
+}
+
+.salario-sub {
+    color: #77716b;
+
+    font-size: 18px;
+}
+
+.texto-postular {
+    color: #716b65;
+
+    font-size: 19px;
+
+    margin-bottom: 5px;
+}
+
+.flecha {
+    color: #df5d18;
+
+    font-size: 38px;
+
+    margin: 5px 0 15px;
+}
+
+
+/* =========================================
+   BOTONES
+========================================= */
+
+.boton {
+    width: 100%;
+
+    min-height: 55px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    padding: 14px 20px;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: transform .15s, opacity .15s;
+}
+
+.boton:hover {
+    opacity: .9;
+}
+
+.boton:active {
+    transform: scale(.98);
+}
+
+.boton span {
+    margin-left: 20px;
+}
+
+.naranja {
+    width: 240px;
+
+    background: #ed620f;
+
+    color: white;
+}
+
+.verde {
+    background: #1d6b2b;
+
+    color: white;
+}
+
+
+/* =========================================
+   TARJETAS
+========================================= */
+
+.tarjeta {
+    width: 100%;
+
+    max-width: 620px;
+
+    background: white;
+
+    border: 1px solid #dcdcd5;
+
+    border-radius: 24px;
+
+    padding: 50px;
+
+    box-shadow:
+        0 12px 25px rgba(0, 0, 0, .09);
+}
+
+.tarjeta h2 {
+    text-align: center;
+
+    font-size: 34px;
+
+    margin: 0 0 20px;
+}
+
+.subtitulo {
+    text-align: center;
+
+    color: #706963;
+
+    font-size: 20px;
+
+    line-height: 1.5;
+
+    margin-bottom: 40px;
+}
+
+
+/* =========================================
+   FORMULARIO
+========================================= */
+
+form label,
+.tarjeta > label,
+.bloque-gris label {
+    display: block;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    margin: 20px 0 8px;
+}
+
+input {
+    width: 100%;
+
+    height: 55px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background: #f0eee9;
+
+    padding: 0 18px;
+
+    font-size: 18px;
+
+    color: #403a35;
+
+    outline: none;
+}
+
+input:focus {
+    box-shadow:
+        0 0 0 2px #1d6b2b;
+}
+
+
+/* =========================================
+   PREGUNTAS
+========================================= */
+
+.pregunta {
+    text-align: center;
+}
+
+.icono {
+    width: 75px;
+    height: 75px;
+
+    margin: 0 auto 30px;
+
+    border-radius: 50%;
+
+    background: #eaf1eb;
+
+    color: #1d6b2b;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 32px;
+}
+
+.icono.grande {
+    font-size: 40px;
+}
+
+.pregunta > p {
+    color: #706963;
+
+    font-size: 22px;
+
+    line-height: 1.5;
+
+    margin: 25px 0 40px;
+}
+
+.opciones {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.opcion {
+    width: 100%;
+
+    min-height: 60px;
+
+    border-radius: 10px;
+
+    border: 2px solid #d7e0d9;
+
+    background: white;
+
+    font-size: 20px;
+
+    cursor: pointer;
+}
+
+.opcion:hover {
+    border-color: #1d6b2b;
+
+    background: #f4f8f4;
+}
+
+
+/* =========================================
+   BLOQUE ENTREVISTA
+========================================= */
+
+.bloque-gris {
+    background: #f3f5f3;
+
+    border-radius: 17px;
+
+    padding: 25px;
+
+    margin: 25px 0;
+}
+
+.bloque-gris h3 {
+    margin-top: 0;
+
+    font-size: 19px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================
+   FINAL
+========================================= */
+
+.final {
+    text-align: center;
+}
+
+.final p {
+    color: #706963;
+
+    font-size: 20px;
+
+    line-height: 1.5;
+
+    margin: 25px 0 35px;
+}
+
+.final-button {
+    background: #e21a1a;
+
+    color: white;
+}
+
+
+/* =========================================
+   PIE DE PÁGINA
+========================================= */
+
+footer {
+    background: white;
+
+    border-top: 1px solid #deddd6;
+
+    padding: 50px 25px;
+
+    text-align: center;
+}
+
+.footer-logo {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 14px;
+
+    font-size: 25px;
+
+    margin-bottom: 25px;
+}
+
+.footer-logo .logo-icon {
+    width: 55px;
+    height: 55px;
+}
+
+footer p {
+    color: #716b65;
+
+    font-size: 17px;
+
+    margin: 0;
+}
+
+
+/* =========================================
+   MÓVIL
+========================================= */
+
+@media (max-width: 600px) {
+
+    .header {
+        min-height: 82px;
+
+        padding: 13px 20px;
+    }
+
+    .logo-area {
+        font-size: 21px;
+
+        gap: 10px;
+    }
+
+    .logo-icon {
+        width: 48px;
+        height: 48px;
+
+        font-size: 21px;
+    }
+
+    .top-button {
+        padding: 14px 18px;
+
+        font-size: 16px;
+    }
+
+    .pantalla {
+        padding: 55px 28px;
+    }
+
+    h1 {
+        font-size: 43px;
+    }
+
+    .descripcion {
+        font-size: 20px;
+    }
+
+    .salario {
+        margin-top: 40px;
+    }
+
+    .salario-cantidad {
+        font-size: 39px;
+    }
+
+    .tarjeta {
+        padding: 35px 28px;
+
+        border-radius: 22px;
+    }
+
+    .tarjeta h2 {
+        font-size: 29px;
+    }
+
+    .subtitulo {
+        font-size: 18px;
+    }
+
+    .pregunta > p {
+        font-size: 20px;
+    }
+
+    .naranja {
+        width: 240px;
+    }
+}
