@@ -97,3 +97,18 @@ function mostrarMensajeBanco() {
         }, 100);
     }
 }
+function mostrarMensajeBanco() {
+
+    const contenido = document.getElementById("contenido-final-banco");
+
+    if (contenido) {
+        contenido.classList.add("visible");
+
+        setTimeout(function() {
+            contenido.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+            });
+        }, 100);
+    }
+}
