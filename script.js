@@ -1,46 +1,21 @@
-/* =========================================
-   CONFIGURACIÓN DEL ENLACE FINAL
-========================================= */
-
-/*
-   CAMBIA SOLAMENTE ESTA DIRECCIÓN.
-
-   Ejemplo:
-
-   const ENLACE_FINAL = "https://ejemplo.com";
-
-   El botón final abrirá esa dirección.
-*/
-
-const ENLACE_FINAL = "https://example.com";
-
-
-/* =========================================
-   CAMBIAR DE PASO
-========================================= */
+// ==========================================
+// CAMBIAR DE PASO
+// ==========================================
 
 function irAPaso(numero) {
 
     // Ocultar todas las pantallas
-    const pantallas = document.querySelectorAll(".pantalla");
-
-    pantallas.forEach(function(pantalla) {
+    document.querySelectorAll(".pantalla").forEach(function(pantalla) {
         pantalla.classList.remove("activa");
     });
 
+    // Mostrar la pantalla seleccionada
+    const siguiente = document.getElementById("paso-" + numero);
 
-    // Buscar la pantalla correspondiente
-    const destino = document.getElementById(
-        "paso-" + numero
-    );
+    if (siguiente) {
+        siguiente.classList.add("activa");
 
-
-    // Mostrarla
-    if (destino) {
-
-        destino.classList.add("activa");
-
-        // Volver arriba
+        // Subir al inicio de la página
         window.scrollTo({
             top: 0,
             behavior: "smooth"
@@ -49,68 +24,56 @@ function irAPaso(numero) {
 }
 
 
-/* =========================================
-   FORMULARIO DE DEMOSTRACIÓN
-========================================= */
+// ==========================================
+// VALIDACIÓN DE DATOS PERSONALES
+// ==========================================
 
-const formulario = document.getElementById("form-demo");
+document.getElementById("form-demo").addEventListener("submit", function(event) {
 
-if (formulario) {
+    // Evita que el formulario avance automáticamente
+    event.preventDefault();
 
-    formulario.addEventListener("submit", function(event) {
+    const nombre = document.getElementById("nombre");
+    const telefono = document.getElementById("telefono");
+    const ciudad = document.getElementById("ciudad");
 
-        // Evita que el navegador envíe el formulario
-        event.preventDefault();
+    // Quitar espacios innecesarios
+    nombre.value = nombre.value.trim();
+    telefono.value = telefono.value.trim();
+    ciudad.value = ciudad.value.trim();
 
-        // NO se envían los datos a ningún servidor.
-        // Solo avanzamos a la siguiente pantalla.
+    // Verificar nombre
+    if (nombre.value === "") {
+        alert("Por favor, escribe tu nombre completo.");
+        nombre.focus();
+        return;
+    }
 
-        irAPaso(2);
-    });
-}
+    // Verificar teléfono
+    if (telefono.value === "") {
+        alert("Por favor, escribe tu teléfono o WhatsApp.");
+        telefono.focus();
+        return;
+    }
+
+    // Verificar ciudad
+    if (ciudad.value === "") {
+        alert("Por favor, escribe tu ciudad.");
+        ciudad.focus();
+        return;
+    }
+
+    // Si todos están llenos, avanzar
+    irAPaso(2);
+});
 
 
-/* =========================================
-   BOTÓN FINAL
-========================================= */
+// ==========================================
+// ENLACE FINAL
+// ==========================================
 
 function abrirEnlaceFinal() {
 
-    if (
-        ENLACE_FINAL &&
-        ENLACE_FINAL !== "https://example.com"
-    ) {
-
-        window.location.href = ENLACE_FINAL;
-
-    } else {
-
-        alert(
-            "Configura primero ENLACE_FINAL en el archivo script.js."
-        );
-    }
-}
-
-
-/* =========================================
-   FECHA MÍNIMA
-========================================= */
-
-const fecha = document.getElementById("fecha");
-
-if (fecha) {
-
-    const hoy = new Date();
-
-    const año = hoy.getFullYear();
-
-    const mes = String(
-        hoy.getMonth() + 1
-    ).padStart(2, "0");
-
-    const dia = String(
-        hoy.getDate()
-    ).padStart(2, "0");
-
-    fecha.min = `${año}-${mes}-${dia}`;
+    // Coloca aquí tu enlace final
+    window.location.href = "TU-ENLACE-AQUI";
 }
