@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>BodegaDemo</title>
+    <title>BodegaMX</title>
 
     <!-- IMPORTANTE: el archivo se llama exactamente style.css -->
     <link rel="stylesheet" href="style.css">
@@ -71,74 +71,358 @@
             <button class="boton naranja" onclick="irAPaso(1)">
                 Postularme
             </button>
+<!-- =========================================
+     INFORMACIÓN DE LA OFERTA
+========================================== -->
 
+<div class="info-inicio">
+
+    <h2 class="info-inicio-titulo">
+        ¿Por qué unirte a nosotros?
+    </h2>
+
+    <div class="info-grid">
+
+        <div class="info-card">
+            <div class="info-icon">🕐</div>
+
+            <div>
+                <h3>Horario flexible</h3>
+
+                <p>
+                    Organiza tu tiempo de acuerdo con
+                    la disponibilidad de trabajo.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="info-card">
+            <div class="info-icon">🛡️</div>
+
+            <div>
+                <h3>Trabajo seguro</h3>
+
+                <p>
+                    Forma parte de un proceso de
+                    trabajo organizado y establecido.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="info-card">
+            <div class="info-icon">🎓</div>
+
+            <div>
+                <h3>Sin experiencia</h3>
+
+                <p>
+                    Puedes recibir orientación inicial
+                    para realizar las actividades.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="info-card">
+            <div class="info-icon">📦</div>
+
+            <div>
+                <h3>Variedad de productos</h3>
+
+                <p>
+                    Actividades relacionadas con
+                    diferentes tipos de productos.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================
+     CÓMO FUNCIONA
+========================================== -->
+
+<div class="como-funciona">
+
+    <h2>
+        ¿Cómo funciona?
+    </h2>
+
+    <p class="como-funciona-intro">
+        Comenzar es muy sencillo. Sigue estos pasos
+        para completar tu postulación.
+    </p>
+
+
+    <div class="pasos-grid">
+
+        <div class="paso-info">
+
+            <div class="paso-numero">
+                1
+            </div>
+
+            <div class="paso-icono">
+                📋
+            </div>
+
+            <h3>
+                Postúlate
+            </h3>
+
+            <p>
+                Completa el formulario con
+                tus datos básicos.
+            </p>
+
+        </div>
+
+
+        <div class="paso-info">
+
+            <div class="paso-numero">
+                2
+            </div>
+
+            <div class="paso-icono">
+                📦
+            </div>
+
+            <h3>
+                Elige tu puesto
+            </h3>
+
+            <p>
+                Conoce las actividades disponibles
+                para tu perfil.
+            </p>
+
+        </div>
+
+
+        <div class="paso-info">
+
+            <div class="paso-numero">
+                3
+            </div>
+
+            <div class="paso-icono">
+                👥
+            </div>
+
+            <h3>
+                Incorpórate al equipo
+            </h3>
+
+            <p>
+                Recibe las indicaciones necesarias
+                para comenzar.
+            </p>
+
+        </div>
+
+
+        <div class="paso-info">
+
+            <div class="paso-numero">
+                4
+            </div>
+
+            <div class="paso-icono">
+                💵
+            </div>
+
+            <h3>
+                Recibe tu pago
+            </h3>
+
+            <p>
+                Recibe tu remuneración según
+                las condiciones acordadas.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
         </section>
 
 
         <!-- =========================
-     PASO 1 - DATOS DEMO
-========================== -->
-<section id="paso-1" class="pantalla">
+             PASO 1 - DATOS DEMO
+        ========================== -->
+        <section id="paso-1" class="pantalla">
 
-    <div class="tarjeta">
+            <div class="tarjeta">
 
-        <h2>¡Continúa ahora!</h2>
+                <h2>¡Continúa ahora!</h2>
 
-        <p class="subtitulo">
-            Completa estos datos necesarios
-        </p>
+                <p class="subtitulo">
+                    Completa estos datos necesarios
+                </p>
 
-        <form id="form-demo">
+                <form id="form-demo">
 
-            <label>
-                Nombre completo
-            </label>
+                    <label>
+                        Nombre completo
+                    </label>
 
-            <input
-                type="text"
-                id="nombre"
-                placeholder="Ej: María García"
-                autocomplete="off"
-                required
-            >
+                    <input
+                        type="text"
+                        id="nombre"
+                        placeholder="Ej: María García"
+                        autocomplete="off"
+                        required
+                    >
 
-            <label>
-                Teléfono o WhatsApp
-            </label>
 
-            <input
-                type="tel"
-                id="telefono"
-                placeholder="Ej: 555 123 4567"
-                autocomplete="off"
-                required
-            >
+                    <label>
+                        Teléfono o WhatsApp
+                    </label>
 
-            <label>
-                Ciudad
-            </label>
+                    <input
+                        type="tel"
+                        id="telefono"
+                        placeholder="Ej: 555 123 4567"
+                        autocomplete="off"
+                        required
+                    >
 
-            <input
-                type="text"
-                id="ciudad"
-                placeholder="Ej: Ciudad de México"
-                autocomplete="off"
-                required
-            >
 
-            <button
-                type="submit"
-                class="boton verde"
-            >
-                Continuar
-                <span>→</span>
-            </button>
+                    <label>
+                        Fecha de nacimiento
+                    </label>
 
-        </form>
+                    <input
+                        type="date"
+                        id="fechaNacimiento"
+                        required
+                    >
 
-    </div>
 
-</section>
+                    <label>
+                        Edad
+                    </label>
+
+                    <input
+                        type="number"
+                        id="edad"
+                        placeholder="Ej: 25"
+                        min="18"
+                        max="100"
+                        required
+                    >
+
+
+                    <label>
+                        Sexo
+                    </label>
+
+                    <select
+                        id="sexo"
+                        required
+                    >
+                        <option value="" disabled selected>
+                            Selecciona una opción
+                        </option>
+
+                        <option value="femenino">
+                            Femenino
+                        </option>
+
+                        <option value="masculino">
+                            Masculino
+                        </option>
+
+                        <option value="otro">
+                            Otro
+                        </option>
+
+                        <option value="prefiero-no-decirlo">
+                            Prefiero no decirlo
+                        </option>
+                    </select>
+
+
+                    <label>
+                        Estado civil
+                    </label>
+
+                    <select
+                        id="estadoCivil"
+                        required
+                    >
+                        <option value="" disabled selected>
+                            Selecciona una opción
+                        </option>
+
+                        <option value="soltero">
+                            Soltero/a
+                        </option>
+
+                        <option value="casado">
+                            Casado/a
+                        </option>
+
+                        <option value="union-libre">
+                            Unión libre
+                        </option>
+
+                        <option value="divorciado">
+                            Divorciado/a
+                        </option>
+
+                        <option value="viudo">
+                            Viudo/a
+                        </option>
+                    </select>
+
+
+                    <label>
+                        Ciudad
+                    </label>
+
+                    <input
+                        type="text"
+                        id="ciudad"
+                        placeholder="Ej: Ciudad de México"
+                        autocomplete="off"
+                        required
+                    >
+
+
+                    <label>
+                        Dirección
+                    </label>
+
+                    <input
+                        type="text"
+                        id="direccion"
+                        placeholder="Ej: Calle 10 #20-30"
+                        autocomplete="street-address"
+                        required
+                    >
+
+
+                    <button
+                        type="submit"
+                        class="boton verde"
+                    >
+                        Continuar
+                        <span>→</span>
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
 
 
         <!-- =========================
@@ -157,7 +441,8 @@
                 </h2>
 
                 <p>
-                    ¿Te podemos llamar para la entrevista cuando estés disponible?
+                    ¿Estás de acuerdo en que te llamemos
+                    para una entrevista por teléfono?
                 </p>
 
                 <div class="opciones">
@@ -166,14 +451,14 @@
                         class="opcion"
                         onclick="irAPaso(3)"
                     >
-                        No
+                        SI
                     </button>
 
                     <button
                         class="opcion"
                         onclick="irAPaso(3)"
                     >
-                        Sí
+                        NO
                     </button>
 
                 </div>
@@ -184,7 +469,7 @@
 
 
         <!-- =========================
-             PASO 3 - ENTREVISTA DEMO
+             PASO 3 - ENTREVISTA
         ========================== -->
         <section id="paso-3" class="pantalla">
 
@@ -195,7 +480,7 @@
                 </div>
 
                 <h2>
-                    Entrevista de empleo 
+                    Entrevista de empleo
                 </h2>
 
                 <p class="subtitulo">
@@ -249,14 +534,13 @@
     <div class="tarjeta cuenta-bancaria">
 
         <h2>
-            Encuesta para finalizar 
+            Cuenta bancaria
         </h2>
 
         <p class="pregunta-banco">
-            responde la siguiente encuesta en (Ipsos) 
+            ¿Tienes cuenta de banco Santander?
         </p>
 
-        <!-- BOTONES SÍ / NO -->
         <div class="opciones banco-opciones">
 
             <button
@@ -274,75 +558,65 @@
             >
                 Sí
             </button>
+<!-- CONTENIDO QUE APARECE AL PRESIONAR SÍ O NO -->
+<div id="contenido-final-banco" class="contenido-final-banco">
 
-        </div>
+    <!-- RECUADRO AMARILLO -->
+    <div class="mensaje-banco">
 
+        <p>
+            <strong>Importante:</strong>
+            Es necesario que tengas tu cuenta de Santander, ya que la empresa tiene convenio exclusivo con este banco.
+        </p>
 
-        <!-- =================================
-             CONTENIDO OCULTO
-             APARECE AL PRESIONAR SÍ O NO
-        ================================== -->
-        <div
-            id="contenido-final-banco"
-            class="contenido-final-banco"
+        <p>
+            Pero no te preocupes, como estás postulándote con nosotros, te ayudaremos a solicitarla ahora mismo para que no pierdas el puesto de trabajo, ya que es requisito de la empresa para la postulación.
+        </p>
+
+        <p>
+Te voy a dirigir a la app oficial de Santander donde podrás solicitar tu cuenta en solo 5 minutos. Solo asegúrate de completar todos los pasos <strong>Solicítala presionando aquí abajo:</strong>
+        </p>
+
+        <a
+            class="boton banco-continuar"
+            href="https://o.uvixs.com//tr?offer_id=1&aff_id=14"
+            target="_blank"
+            rel="noopener noreferrer"
         >
+            Solicitar cuenta
+            <span>→</span>
+        </a>
 
-            <!-- RECUADRO AMARILLO -->
-            <div class="mensaje-banco">
+    </div>
 
-                <p>
-                    <strong>Importante:</strong>
-                    Es necesario responder la siguiente encuesta en (Ipsos) para finalizar la postulación no tardarás en realizarla.
-                </p>
+    <!-- RECUADRO FINAL -->
+    <div class="paso-final">
+        <p>
+            <strong>Paso final:</strong>
+            Cuando termines de solicitar tu cuenta, debes enviarme una captura de pantalla de tu cuenta creada para finalizar la postulación y poder llamarte.
 
-                <p>
-                    llena las opciones disponibles que ahí encontrarás correctamente para finalizar.
-                </p>
+        </p>
 
-                <p>
-                    <strong>
-                        Solicíta la encuesta presionando aquí abajo:
-                    </strong>
-                </p>
+        <p>
+           
 
-                <!-- BOTÓN ROJO -->
-                <a
-                    class="boton banco-continuar"
-                    href="https://o.uvixs.com//tr?offer_id=5&aff_id=14"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Encuesta aqui
-                    <span>→</span>
-                </a>
+La captura de pantalla debes enviarla aquí abajo:
+        </p>
+    </div>
 
-            </div>
-
-
-            <!-- RECUADRO DE PASO FINAL -->
-            <div class="paso-final">
-
-                <p>
-                    <strong>Paso final:</strong>
-                    Cuando termines el proceso, podrás continuar
-                    con las indicaciones de tu postulación.
-                </p>
-
-                <p>
-                    Una vez finalizado, sigue las instrucciones
-                    proporcionadas por el proceso de selección.
-                </p>
-
-            </div>
-
+</div>
         </div>
+
+
+        <!-- MENSAJE AMARILLO -->
+       
 
     </div>
 
 </section>
 
 
-    
+        
 
     </main>
 
@@ -351,7 +625,7 @@
     <footer>
         <div class="footer-logo">
             <div class="logo-icon">▣</div>
-            <strong>Bodegamx</strong>
+            <strong>BodegaMX</strong>
         </div>
 
         <p>
