@@ -738,13 +738,10 @@ footer p {
 
         line-height: 1.6;
     }
-}.contenido-final-banco {
-    display: none;
-    margin-top: 35px;
+
 }
 
-.contenido-final-banco.visible {
-    display: block;
+
 }
 
 .mensaje-banco {
